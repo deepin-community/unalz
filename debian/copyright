@@ -1,0 +1,98 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: unalz
+Upstream-Contact: https://kippler.com/win/unalz/
+Source: https://kippler.com/win/unalz/
+
+Files: *
+Copyright: 2004-2009 kippler@gmail.com
+ Copyright(C) 2004-2009 by kippler@gmail.com (https://kippler.com/win/unalz/)
+License: Zlib
+
+Files: bzip2/*
+Copyright: 1996-2002 Julian R Seward
+License: BSD-4-Clause
+ Copyright (C) 1996-2002 Julian R Seward.  All rights reserved.
+ .
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ .
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ .
+ 2. The origin of this software must not be misrepresented; you must 
+    not claim that you wrote the original software.  If you use this 
+    software in a product, an acknowledgment in the product 
+    documentation would be appreciated but is not required.
+ .
+ 3. Altered source versions must be plainly marked as such, and must
+    not be misrepresented as being the original software.
+ .
+ 4. The name of the author may not be used to endorse or promote 
+    products derived from this software without specific prior written 
+    permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS
+ OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY
+ DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
+ GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ .
+ Julian Seward, Cambridge, UK.
+ jseward@acm.org
+ bzip2/libbzip2 version 1.0 of 21 March 2000
+
+Files: zlib/*
+Copyright: 1995-2005 Jean-loup Gailly and Mark Adler
+ .
+ Jean-loup Gailly        Mark Adler
+ jloup@gzip.org          madler@alumni.caltech.edu
+ .
+ The data format used by the zlib library is described by RFCs (Request for
+ Comments) 1950 to 1952 in the files http://www.ietf.org/rfc/rfc1950.txt
+ (zlib format), rfc1951.txt (deflate format) and rfc1952.txt (gzip format).
+License: Zlib
+
+License: Zlib
+ This software is provided 'as-is', without any express or implied
+ warranty.  In no event will the authors be held liable for any damages
+ arising from the use of this software.
+ .
+ Permission is granted to anyone to use this software for any purpose,
+ including commercial applications, and to alter it and redistribute it
+ freely, subject to the following restrictions:
+ .
+ 1. The origin of this software must not be misrepresented; you must not
+    claim that you wrote the original software. If you use this software
+    in a product, an acknowledgment in the product documentation would be
+    appreciated but is not required.
+ 2. Altered source versions must be plainly marked as such, and must not be
+    misrepresented as being the original software.
+ 3. This notice may not be removed or altered from any source distribution.
+
+
+Files: debian/*
+Copyright: 2004-2005 Yooseong Yang <yooseong@debian.org>
+	   2008-2017 Changwoo Ryu <cwryu@debian.org>
+License: GPL-2+
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA.
+ .
+ See /usr/share/common-licenses/GPL-2 for the full license.

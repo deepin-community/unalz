@@ -1,0 +1,197 @@
+unalz (0.65-8) unstable; urgency=medium
+
+  * debian/control: Use debhelper compat level 13
+  * debian/control: Add Rules-Requires-Root: no
+  * debian/{rules,unalz.manpages}: Stop overriding dh_installman and use
+    debian/unalz.manpages
+  * debian/control: Bump Standards-Version to 4.5.0
+  * debian/salsa-ci.yml: Add Salsa CI config
+  * debian/rules: Pass the hardning CPPFLAGS properly; the upstream
+    makefile only uses CFLAGS so we use CPPFLAGS in CFLAGS.
+
+ -- Changwoo Ryu <cwryu@debian.org>  Wed, 13 May 2020 01:24:05 +0900
+
+unalz (0.65-7) unstable; urgency=medium
+
+  [ Helmut Grohne ]
+  * Fix FTCBFS: Provide a c++ compiler in $(CPP). (Closes: #901348)
+
+  [ Changwoo Ryu ]
+  * Use debhelper 11
+  * Use HTTPS for the copyright format URI
+  * Standards-Version: 4.1.4
+
+ -- Changwoo Ryu <cwryu@debian.org>  Sat, 16 Jun 2018 13:17:28 +0900
+
+unalz (0.65-6) unstable; urgency=medium
+
+  * debian/{control,copyright,watch}: Correct the upstream URL
+  * debian/control:
+    - l10n-korean team is set as the Maintainer
+    - Update Vcs-* to the salsa.debian.org repository
+    - Standards-Version: 4.1.2
+  * debian/{compat,control}: Use debhelper 10
+  * patch: Fix file offset overflow on incomplete files (Closes: #871722)
+
+ -- Changwoo Ryu <cwryu@debian.org>  Wed, 27 Dec 2017 17:38:44 +0900
+
+unalz (0.65-5) unstable; urgency=medium
+
+  * Correct pipe mode (Closes: #775233)
+  * Correct crash; check filename length record (Closes: #775237)
+  * Standards-Version: 3.9.8
+  * debian/control: Use secure URLs for Vcs-*
+  * debian/copyright: Correct DEP-5 format
+  * debian/rules: Enable hardening=+all
+
+ -- Changwoo Ryu <cwryu@debian.org>  Sun, 22 Jan 2017 19:49:15 +0900
+
+unalz (0.65-4) unstable; urgency=low
+
+  * Standards-Version: 3.9.5
+  * Remove unneeded quilt build dependency
+  * Correct debian/copyright format
+  * Add tags on patches
+  * Clean up build rule (Closes: #736460)
+  * Improve package description and update note on supported formats.
+  * debian/control: Correct Vcs-* fields
+  * Add git-buildpackage config
+
+ -- Changwoo Ryu <cwryu@debian.org>  Mon, 27 Jan 2014 03:16:36 +0900
+
+unalz (0.65-3) unstable; urgency=low
+
+  * Build-Depends on zlib1g-dev version >= 1.2.7 (Closes: #672400)
+  * debian/copyright: rewrite using the copyright format 1.0
+  * Use debhelper 9.
+
+ -- Changwoo Ryu <cwryu@debian.org>  Sat, 12 May 2012 20:41:32 +0900
+
+unalz (0.65-2) unstable; urgency=low
+
+  * Use source format 3.0 (quilt) and debhelper 7
+  * Standards-Version: 3.9.3
+  * Fix FTBFS with GCC 4.7 (Closes: #672001)
+  * Build with the optimize build flag
+    - according to the policy 4.9.
+
+ -- Changwoo Ryu <cwryu@debian.org>  Fri, 11 May 2012 02:55:06 +0900
+
+unalz (0.65-1) unstable; urgency=low
+
+  * New Upstream Version
+  * Document about zlib and libbz2 link in copyright and in README.Debian.
+  * Document the details of the supported ALZ formats in README.Debian.
+  * Standards-Version: 3.8.2
+  * Do not overwrite CDBS supplied build flags.
+
+ -- Changwoo Ryu <cwryu@debian.org>  Sun, 02 Aug 2009 06:07:08 +0900
+
+unalz (0.64-1) unstable; urgency=low
+
+  * New Upstream Version
+  * Standards-Version: 3.8.0.
+  * Switch to CDBS.
+  * Use system installed libbz2 instead of the embedded one.
+  * Depends on ${misc:Depends} for debhelper.
+  * Updated the copyright year and the download URL in the copyright file.
+
+ -- Changwoo Ryu <cwryu@debian.org>  Fri, 23 Jan 2009 21:29:18 +0900
+
+unalz (0.62-1) unstable; urgency=low
+
+  * New upstream release.
+  * Switched to docbook XML for the man page. Corrected the command
+    synopsis.
+  * Updated the upstream mail address.
+
+ -- Changwoo Ryu <cwryu@debian.org>  Wed, 09 Apr 2008 13:24:40 +0900
+
+unalz (0.61-1) unstable; urgency=low
+
+  * New upstream release. Closes: #448590.
+  * New maintainer. Closes: #362995.
+  * Add missing include <cstring>. Thanks to Martin Michlmayr for the
+    patch.  Closes: #455178.
+  * Standards-Version: 3.7.3.
+  * UTF-8 encoding default. Closes: #470095.
+  * Add Homepage field.
+  * Add Vcs-Git and Vcs-Browser fields.
+  * Change the short description to a noun phrase, according to the
+    developer's reference 6.2.2.
+  * Update the option description and correct typos in the man page.
+  * Update the unalz copyright.
+
+ -- Changwoo Ryu <cwryu@debian.org>  Sun, 16 Mar 2008 14:25:42 +0900
+
+unalz (0.55-4) unstable; urgency=low
+
+  * QA upload.
+  * UnAlz.h: Add missing includes.  Thanks to Martin Michlmayr for the
+    patch.  Closes: #417746.
+
+ -- Matej Vela <vela@debian.org>  Sun, 15 Apr 2007 19:11:53 +0200
+
+unalz (0.55-3) unstable; urgency=low
+
+  * QA upload.
+  * Fix build failure on GNU/kFreeBSD and Hurd.  Thanks to Petr Salinger
+    for the patch.  Closes: #401514.
+
+ -- Matej Vela <vela@debian.org>  Sat, 16 Dec 2006 10:52:03 +0100
+
+unalz (0.55-2) unstable; urgency=low
+
+  * QA upload.
+  * Enable iconv support.  Closes: #378833.
+  * Conforms to Standards version 3.7.2.
+
+ -- Matej Vela <vela@debian.org>  Fri, 21 Jul 2006 00:31:52 +0200
+
+unalz (0.55-1) unstable; urgency=low
+
+  * QA upload.
+  * New upstream release.
+    - Fixes directory traversal vulnerability [CVE-2006-0950].
+      Closes: #356832.
+  * Package is orphaned (#362995); set maintainer to Debian QA Group.
+  * Acknowledge NMU.  Closes: #283049.
+  * Link against zlib1g instead of a private copy.  (The same is not
+    possible for libbz2, parts of which were modified.)
+  * Switch to debhelper 5.
+  * debian/README.Debian: Redundant; remove.
+  * debian/unalz.xml: debian/unalz.sgml is more recent; remove.
+  * debian/copyright: Add license for bzip2 and zlib sources.
+  * debian/rules: Remove generated man page on clean.
+  * debian/watch: Add.
+  * Conforms to Standards version 3.7.0.
+
+ -- Matej Vela <vela@debian.org>  Tue,  2 May 2006 21:41:25 +0200
+
+unalz (0.52-1) unstable; urgency=low
+
+  * New Upstream Update.
+  * Corrected encryption part.
+  * Corrected make file for linux system.
+  * Added pipe mode
+  * Added setlocale function to main function.
+
+ -- Yooseong Yang <yooseong@debian.org>  Wed, 28 Sep 2005 09:27:48 +0900
+
+unalz (0.30) unstable; urgency=low
+
+  * New Upstream Update.
+
+ -- Yooseong Yang <yooseong@debian.org>  Wed, 29 Dec 2004 15:13:48 +0900
+
+unalz (0.21.1) unstable; urgency=low
+
+  * Add Build-depends: docbook-to-man. Closes: #283049
+
+ -- Steve McIntyre <93sam@debian.org>  Sun, 28 Nov 2004 12:52:48 +0000
+
+unalz (0.21) unstable; urgency=low
+
+  * Initial Release. (closes: #278741)
+
+ -- Yooseong Yang <yooseong@debian.org>  Mon, 25 Oct 2004 16:43:48 +0900

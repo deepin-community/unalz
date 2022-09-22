@@ -1,0 +1,28 @@
+unalz for Debian
+================
+
+Supported formats
+-----------------
+
+Unalz supports two different kinds of ALZ formats which were
+introduced by proprietary Alzip program by Estsoft Corp. The first
+BZIP2 based ALZ format was the default format of Alzip 4.9. Alzip 5.0
+and later versions have used the newer DEFLATE based format.
+
+Since 2009, new versions of Alzip supports the new "EGG format". Its
+specification document and "unegg" program for Linux are available but
+under a restrictive (non-commercial only and unmodifiable) license. So
+don't expect EGG support in the foreseeable future.
+
+
+Dynamicaly linked with zlib and libbz2
+--------------------------------------
+
+ALZ format doesn't implement its own compression algorithm. Instead it
+just uses BZIP2 or DEFLATE algorithms. That's why the unalz source
+contains zlib and bzip2 library source code. But unalz Debian package
+doesn't use that embedded library source and it's dynamically linked
+with system-installed library packages, to reduce the binary size and
+to minimize possible future security problem by zlib and bzip2.
+
+ -- Changwoo Ryu <cwryu@debian.org>, Sat,  2 Feb 2013 13:26:05 +0900
